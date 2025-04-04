@@ -1,0 +1,35 @@
+/* Для анимации падающих цветов */
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.flower {
+  position: absolute;
+  top: -10%;
+  animation: fall linear infinite;
+  pointer-events: none; /* Чтобы клики не мешали */
+}
+
+.flower img {
+  width: 50px; /* Размер изображения */
+  opacity: 0.8;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+.flower:nth-child(odd) img {
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+
+.flower:nth-child(even) img {
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
