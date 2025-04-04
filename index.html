@@ -10,7 +10,6 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #0d0d0d;
       color: #f0f0f0;
-      overflow: hidden; /* Это предотвратит появление полос прокрутки */
     }
     header {
       background: #121212;
@@ -65,43 +64,6 @@
       color: #00fff7;
       text-decoration: none;
     }
-
-    /* Для анимации падающих цветов */
-    @keyframes fall {
-      0% {
-        transform: translateY(-100px) rotate(0deg);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(100vh) rotate(360deg);
-        opacity: 0;
-      }
-    }
-
-    .flower {
-      position: absolute;
-      top: -10%;
-      animation: fall linear infinite;
-      pointer-events: none; /* Чтобы клики не мешали */
-    }
-
-    .flower img {
-      width: 50px; /* Размер изображения */
-      opacity: 0.8;
-      animation-duration: 5s;
-      animation-delay: 0s;
-    }
-
-    .flower:nth-child(odd) img {
-      animation-duration: 6s;
-      animation-delay: 2s;
-    }
-
-    .flower:nth-child(even) img {
-      animation-duration: 7s;
-      animation-delay: 1s;
-    }
-
   </style>
 </head>
 <body>
@@ -112,7 +74,7 @@
   <main>
     <section>
       <h2>Обо мне</h2>
-      <p>Привет! Меня зовут Роман, мне 13 лет, я начинающий разработчик. Учусь программированию, интересуюсь VR, создаю сайты и ботов. Моя цель — стать профи и купить свой первый VR-шлем! Но есть и дальняя мечта, наконец переехать в США. Я не слушаю никого, ни родителей, ни братьев, никого. Я сосредоточен на себе.</p>
+      <p>Привет! Меня зовут Роман, мне 13 лет, я начинающий разработчик. Учусь программированию, интересуюсь VR, создаю сайты и ботов. Моя цель — стать профи и купить свой первый VR-шлем!</p>
     </section>
 
     <section>
@@ -129,30 +91,12 @@
 
     <section>
       <h2>Контакты</h2>
-      <p>📬 Telegram: <a href="https://t.me/Ridiculous_Dream">@Ridiculous_Dream</a></p>
+      <p>📬 Telegram: <a href="https://t.me/yourusername">@yourusername</a></p>
       <p>💻 GitHub: <a href="https://github.com/RomanDevMatrix">RomanDevMatrix</a></p>
     </section>
   </main>
   <footer>
     <p>© 2025 RomanDevMatrix</p>
   </footer>
-
-  <!-- Падающие цветы -->
-  <div class="flower" style="left: 10%; animation-delay: 0s;">
-    <img src="https://i.pinimg.com/736x/a4/d9/81/a4d98140400fd152be46d0cc727eac6b.jpg" alt="Flower 1">
-  </div>
-  <div class="flower" style="left: 30%; animation-delay: 2s;">
-    <img src="https://i.pinimg.com/736x/a4/d9/81/a4d98140400fd152be46d0cc727eac6b.jpg" alt="Flower 2">
-  </div>
-  <div class="flower" style="left: 50%; animation-delay: 1s;">
-    <img src="https://i.pinimg.com/736x/a4/d9/81/a4d98140400fd152be46d0cc727eac6b.jpg" alt="Flower 3">
-  </div>
-  <div class="flower" style="left: 70%; animation-delay: 3s;">
-    <img src="https://i.pinimg.com/736x/a4/d9/81/a4d98140400fd152be46d0cc727eac6b.jpg" alt="Flower 4">
-  </div>
-  <div class="flower" style="left: 90%; animation-delay: 4s;">
-    <img src="https://i.pinimg.com/736x/a4/d9/81/a4d98140400fd152be46d0cc727eac6b.jpg" alt="Flower 5">
-  </div>
-
 </body>
 </html>
