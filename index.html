@@ -8,9 +8,9 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #3a3a3a, #4a4a4a); /* Более мягкий градиент */
+      background: linear-gradient(135deg, #3a3a3a, #4a4a4a);
       color: #f0f0f0;
-      animation: backgroundAnimation 10s infinite alternate; /* Анимация фона */
+      animation: backgroundAnimation 10s infinite alternate;
     }
 
     @keyframes backgroundAnimation {
@@ -18,7 +18,7 @@
         background: linear-gradient(135deg, #3a3a3a, #4a4a4a);
       }
       50% {
-        background: linear-gradient(135deg, #1d1d1d, #3a3a3a); /* Темнее на середине */
+        background: linear-gradient(135deg, #1d1d1d, #3a3a3a);
       }
       100% {
         background: linear-gradient(135deg, #3a3a3a, #4a4a4a);
@@ -31,27 +31,33 @@
       text-align: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     }
+
     header h1 {
       font-size: 2.5rem;
       color: #00fff7;
     }
+
     header p {
       font-size: 1.2rem;
       color: #ccc;
     }
+
     main {
       padding: 2rem;
       max-width: 800px;
       margin: 0 auto;
     }
+
     section {
       margin-bottom: 2rem;
     }
+
     h2 {
       color: #00fff7;
       border-bottom: 1px solid #333;
       padding-bottom: 0.5rem;
     }
+
     .project {
       background: #1a1a1a;
       padding: 1rem;
@@ -59,14 +65,17 @@
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
+
     .project h3 {
       margin: 0 0 0.5rem 0;
       color: #ffffff;
     }
+
     .project p {
       margin: 0;
       color: #ccc;
     }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -74,6 +83,7 @@
       color: #777;
       font-size: 0.9rem;
     }
+
     a {
       color: #00fff7;
       text-decoration: none;
@@ -81,6 +91,12 @@
   </style>
 </head>
 <body>
+  <!-- Вставка аудиофайла -->
+  <audio autoplay loop>
+    <source src="your-audio-file.mp3" type="audio/mp3">
+    Ваш браузер не поддерживает элемент <code>audio</code>.
+  </audio>
+
   <header>
     <h1>RomanDevMatrix</h1>
     <p>Юный разработчик | Люблю кодить, учиться и идти к мечте</p>
@@ -88,7 +104,7 @@
   <main>
     <section>
       <h2>Обо мне</h2>
-      <p>Привет! Меня зовут Роман, мне 13 лет, я начинающий разработчик. Учусь программированию, интересуюсь VR, создаю сайты и ботов. Моя цель — стать профи и купить свой первый VR-шлем! Но есть и дальняя мечта, наконец переехать в США. Я не слушаю никого, ни родителей, ни братьев, никого. Я сосредоточен на себе. Сейчас 2025, пока что использую ChatGPT для написания кодов и помощи мне, но в скором, я буду делать это сам. Дата когда начал: 04.04.2025</p>
+      <p>Привет! Меня зовут Роман, мне 13 лет, я начинающий разработчик. Учусь программированию, интересуюсь VR, создаю сайты и ботов. Моя цель — стать профи и купить свой первый VR-шлем! Но есть и дальняя мечта, наконец переехать в США. Я не слушаю никого, ни родителей, ни братьев, никого. Я сосредоточен на себе.</p>
     </section>
 
     <section>
@@ -107,6 +123,19 @@
       <h2>Контакты</h2>
       <p>📬 Telegram: <a href="https://t.me/Ridiculous_Dream">@Ridiculous_Dream</a></p>
       <p>💻 GitHub: <a href="https://github.com/RomanDevMatrix">RomanDevMatrix</a></p>
+    </section>
+
+    <!-- Новый раздел "Услуги" -->
+    <section>
+      <h2>Услуги</h2>
+      <p>Я готов помочь с созданием и дизайном сайтов. Вот что я могу сделать:</p>
+      <ul>
+        <li>Верстка лендингов и простых сайтов на HTML/CSS</li>
+        <li>Адаптивный дизайн для мобильных устройств</li>
+        <li>Дизайн визиток и портфолио</li>
+        <li>Разработка простых Telegram-ботов</li>
+      </ul>
+      <p>Если тебе нужен сайт — пиши в Telegram: <a href="https://t.me/Ridiculous_Dream">@Ridiculous_Dream</a></p>
     </section>
   </main>
   <footer>
