@@ -3,88 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Монохромное Портфолио</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- AOS Animation CSS -->
+  <title>Элегантное Портфолио</title>
+  <!-- Подключение шрифтов: Montserrat для заголовков, Roboto для основного текста -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Подключение AOS для анимаций -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <!-- Подключение кастомных стилей -->
+  <!-- Подключение стилей -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Фиксированная навигация -->
-  <nav>
-    <div class="container nav-container">
-      <div class="logo">
-        <a href="#home">МоноПортфолио</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Главная</a></li>
+  <!-- Боковая навигация -->
+  <div class="sidebar">
+    <div class="logo">
+      <h1>Элегантно</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Главная</a></li>
         <li><a href="#about">Обо мне</a></li>
         <li><a href="#portfolio">Портфолио</a></li>
         <li><a href="#contact">Контакты</a></li>
       </ul>
-    </div>
-  </nav>
-
-  <!-- Хедер -->
-  <header id="home">
-    <div class="header-overlay"></div>
-    <div class="header-content" data-aos="fade-in">
-      <h1>Монохромное Портфолио</h1>
-      <p>Современный дизайн в черно-серых тонах</p>
-      <a href="#portfolio" class="btn">Посмотреть работы</a>
-    </div>
-  </header>
-
-  <!-- Секция "Обо мне" -->
-  <section id="about">
-    <div class="container" data-aos="fade-up">
-      <h2>Обо мне</h2>
-      <p>Я создаю уникальные проекты, используя минимализм и элегантность черно-серой палитры. Мой подход сочетает функциональность с эстетикой, что позволяет создавать работы, привлекающие внимание.</p>
-    </div>
-  </section>
-
-  <!-- Секция "Портфолио" -->
-  <section id="portfolio">
-    <div class="container" data-aos="fade-up">
-      <h2>Портфолио</h2>
-      <div class="portfolio-grid">
-        <div class="portfolio-item" data-aos="zoom-in">
-          <img src="https://via.placeholder.com/400x300/333/FFF?text=Проект+1" alt="Проект 1">
-          <h3>Проект 1</h3>
-        </div>
-        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://via.placeholder.com/400x300/444/FFF?text=Проект+2" alt="Проект 2">
-          <h3>Проект 2</h3>
-        </div>
-        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
-          <img src="https://via.placeholder.com/400x300/555/FFF?text=Проект+3" alt="Проект 3">
-          <h3>Проект 3</h3>
+    </nav>
+  </div>
+  <!-- Основной контент -->
+  <div class="main-content">
+    <!-- Секция "Главная" (Hero) -->
+    <section id="hero" class="hero" data-aos="fade-in">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h2>Добро пожаловать в мое портфолио</h2>
+        <p>Качество, элегантность и внимание к деталям</p>
+        <a href="#portfolio" class="btn">Смотреть работы</a>
+      </div>
+    </section>
+    <!-- Секция "Обо мне" -->
+    <section id="about" class="section about" data-aos="fade-up">
+      <div class="content-wrapper">
+        <h2>Обо мне</h2>
+        <p>Я дизайнер и разработчик, стремящийся создавать элегантные и функциональные решения. Мой подход — находить идеальный баланс между эстетикой и практичностью, чтобы каждая работа радовала глаз и была удобной для использования.</p>
+      </div>
+    </section>
+    <!-- Секция "Портфолио" -->
+    <section id="portfolio" class="section portfolio" data-aos="fade-up">
+      <div class="content-wrapper">
+        <h2>Портфолио</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-card" data-aos="zoom-in">
+            <img src="https://via.placeholder.com/500x300?text=Работа+1" alt="Работа 1">
+            <h3>Работа 1</h3>
+          </div>
+          <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="100">
+            <img src="https://via.placeholder.com/500x300?text=Работа+2" alt="Работа 2">
+            <h3>Работа 2</h3>
+          </div>
+          <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="200">
+            <img src="https://via.placeholder.com/500x300?text=Работа+3" alt="Работа 3">
+            <h3>Работа 3</h3>
+          </div>
+          <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="300">
+            <img src="https://via.placeholder.com/500x300?text=Работа+4" alt="Работа 4">
+            <h3>Работа 4</h3>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Секция "Контакты" -->
-  <section id="contact">
-    <div class="container" data-aos="fade-up">
-      <h2>Контакты</h2>
-      <p>Свяжитесь со мной для обсуждения проектов:</p>
-      <ul class="contact-info">
-        <li><strong>Email:</strong> example@mail.com</li>
-        <li><strong>Телефон:</strong> +7 123 456 7890</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Футер -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 МоноПортфолио. Все права защищены.</p>
-    </div>
-  </footer>
-
+    </section>
+    <!-- Секция "Контакты" -->
+    <section id="contact" class="section contact" data-aos="fade-up">
+      <div class="content-wrapper">
+        <h2>Контакты</h2>
+        <p>Готов обсудить новые проекты и сотрудничество. Свяжитесь со мной!</p>
+        <div class="contact-details">
+          <p><strong>Email:</strong> example@mail.com</p>
+          <p><strong>Телефон:</strong> +7 123 456 7890</p>
+        </div>
+      </div>
+    </section>
+    <!-- Футер -->
+    <footer class="footer" data-aos="fade-in">
+      <div class="content-wrapper">
+        <p>&copy; 2025 Элегантное Портфолио. Все права защищены.</p>
+      </div>
+    </footer>
+  </div>
   <!-- Подключение AOS JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
