@@ -3,93 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Explorer</title>
+  <title>Монохромное Портфолио</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome для иконок -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <!-- AOS Animation CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <!-- Подключение кастомных стилей -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Фиксированное меню -->
+  <!-- Фиксированная навигация -->
   <nav>
-    <div class="nav-container">
+    <div class="container nav-container">
       <div class="logo">
-        <a href="#home">Travel Explorer</a>
+        <a href="#home">МоноПортфолио</a>
       </div>
       <ul class="nav-links">
         <li><a href="#home">Главная</a></li>
-        <li><a href="#destinations">Направления</a></li>
-        <li><a href="#blog">Блог</a></li>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
         <li><a href="#contact">Контакты</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Хедер с ярким фоновым изображением -->
+  <!-- Хедер -->
   <header id="home">
     <div class="header-overlay"></div>
-    <div class="header-content" data-aos="fade-up">
-      <h1>Открой мир с нами</h1>
-      <p>Путешествуй. Исследуй. Вдохновляйся.</p>
-      <a href="#destinations" class="btn">Узнать больше</a>
+    <div class="header-content" data-aos="fade-in">
+      <h1>Монохромное Портфолио</h1>
+      <p>Современный дизайн в черно-серых тонах</p>
+      <a href="#portfolio" class="btn">Посмотреть работы</a>
     </div>
   </header>
 
-  <!-- Секция "Направления" -->
-  <section id="destinations">
+  <!-- Секция "Обо мне" -->
+  <section id="about">
     <div class="container" data-aos="fade-up">
-      <h2>Лучшие направления</h2>
-      <div class="destinations-grid">
-        <div class="destination-item" data-aos="zoom-in">
-          <img src="https://via.placeholder.com/400x300?text=Париж" alt="Париж">
-          <div class="destination-info">
-            <h3>Париж</h3>
-            <p>Город романтики и искусства.</p>
-          </div>
-        </div>
-        <div class="destination-item" data-aos="zoom-in" data-aos-delay="150">
-          <img src="https://via.placeholder.com/400x300?text=Токио" alt="Токио">
-          <div class="destination-info">
-            <h3>Токио</h3>
-            <p>Место, где традиции встречаются с технологией.</p>
-          </div>
-        </div>
-        <div class="destination-item" data-aos="zoom-in" data-aos-delay="300">
-          <img src="https://via.placeholder.com/400x300?text=Нью-Йорк" alt="Нью-Йорк">
-          <div class="destination-info">
-            <h3>Нью-Йорк</h3>
-            <p>Город, который никогда не спит.</p>
-          </div>
-        </div>
-      </div>
+      <h2>Обо мне</h2>
+      <p>Я создаю уникальные проекты, используя минимализм и элегантность черно-серой палитры. Мой подход сочетает функциональность с эстетикой, что позволяет создавать работы, привлекающие внимание.</p>
     </div>
   </section>
 
-  <!-- Секция "Блог" -->
-  <section id="blog">
+  <!-- Секция "Портфолио" -->
+  <section id="portfolio">
     <div class="container" data-aos="fade-up">
-      <h2>Последние статьи</h2>
-      <div class="blog-grid">
-        <article class="blog-post" data-aos="flip-left">
-          <img src="https://via.placeholder.com/400x250?text=Статья+1" alt="Статья 1">
-          <div class="post-info">
-            <h3>Путешествие по Европе</h3>
-            <p>Откройте для себя незабываемые маршруты и места в сердце Европы.</p>
-            <a href="#" class="read-more">Читать дальше</a>
-          </div>
-        </article>
-        <article class="blog-post" data-aos="flip-left" data-aos-delay="150">
-          <img src="https://via.placeholder.com/400x250?text=Статья+2" alt="Статья 2">
-          <div class="post-info">
-            <h3>Приключения в Азии</h3>
-            <p>Узнайте о традициях и новинках современного азиатского туризма.</p>
-            <a href="#" class="read-more">Читать дальше</a>
-          </div>
-        </article>
+      <h2>Портфолио</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-aos="zoom-in">
+          <img src="https://via.placeholder.com/400x300/333/FFF?text=Проект+1" alt="Проект 1">
+          <h3>Проект 1</h3>
+        </div>
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://via.placeholder.com/400x300/444/FFF?text=Проект+2" alt="Проект 2">
+          <h3>Проект 2</h3>
+        </div>
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://via.placeholder.com/400x300/555/FFF?text=Проект+3" alt="Проект 3">
+          <h3>Проект 3</h3>
+        </div>
       </div>
     </div>
   </section>
@@ -97,26 +69,19 @@
   <!-- Секция "Контакты" -->
   <section id="contact">
     <div class="container" data-aos="fade-up">
-      <h2>Связаться с нами</h2>
-      <p>Оставьте свои контакты, и мы расскажем о лучших предложениях для ваших путешествий.</p>
-      <form action="#" class="contact-form">
-        <input type="text" placeholder="Ваше имя" required>
-        <input type="email" placeholder="Ваш email" required>
-        <textarea placeholder="Ваше сообщение" required></textarea>
-        <button type="submit" class="btn">Отправить</button>
-      </form>
+      <h2>Контакты</h2>
+      <p>Свяжитесь со мной для обсуждения проектов:</p>
+      <ul class="contact-info">
+        <li><strong>Email:</strong> example@mail.com</li>
+        <li><strong>Телефон:</strong> +7 123 456 7890</li>
+      </ul>
     </div>
   </section>
 
   <!-- Футер -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Travel Explorer. Все права защищены.</p>
-      <ul class="social-links">
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-      </ul>
+      <p>&copy; 2025 МоноПортфолио. Все права защищены.</p>
     </div>
   </footer>
 
