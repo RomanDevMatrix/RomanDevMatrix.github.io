@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Портфолио - Бизнес класс</title>
+  <title>Портфолио - Бизнес Класс</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <!-- Font Awesome для иконок -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <!-- AOS Animation CSS -->
@@ -14,27 +14,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Хедер с навигацией и фоновой картинкой -->
-  <header id="home">
-    <nav>
-      <ul>
+  <!-- Фиксированное меню -->
+  <nav>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="#home">МоеПортфолио</a>
+      </div>
+      <ul class="nav-links">
         <li><a href="#home">Главная</a></li>
         <li><a href="#about">Обо мне</a></li>
         <li><a href="#portfolio">Портфолио</a></li>
         <li><a href="#contact">Контакты</a></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
+
+  <!-- Хедер -->
+  <header id="home">
+    <div class="header-overlay"></div>
     <div class="header-content" data-aos="fade-down">
       <h1>Добро пожаловать в мое портфолио</h1>
       <p>Эксклюзивные проекты для бизнеса</p>
+      <a href="#portfolio" class="btn">Смотреть работы</a>
     </div>
   </header>
 
   <!-- Секция "Обо мне" -->
   <section id="about">
-    <div class="container" data-aos="fade-up">
-      <h2>Обо мне</h2>
-      <p>Меня зовут [Ваше имя]. Я профессиональный веб-дизайнер и разработчик с опытом создания уникальных решений для бизнеса. Моя цель – разрабатывать современные, функциональные и эстетичные сайты, которые выделяются на фоне конкурентов.</p>
+    <div class="container about-container" data-aos="fade-up">
+      <div class="about-img">
+        <img src="https://via.placeholder.com/300x300" alt="Моя фотография">
+      </div>
+      <div class="about-text">
+        <h2>Обо мне</h2>
+        <p>Меня зовут [Ваше имя]. Я профессиональный веб-дизайнер и разработчик, специализирующийся на создании уникальных решений для бизнеса. Моя цель — разрабатывать современные, функциональные и эстетичные сайты, которые выделяются на фоне конкурентов.</p>
+      </div>
     </div>
   </section>
 
@@ -42,26 +56,34 @@
   <section id="portfolio">
     <div class="container">
       <h2 data-aos="fade-up">Портфолио</h2>
-      <div class="portfolio-items">
-        <div class="item" data-aos="zoom-in">
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-aos="zoom-in">
           <img src="https://via.placeholder.com/400x300" alt="Проект 1">
-          <h3>Проект 1</h3>
-          <p>Краткое описание проекта.</p>
+          <div class="portfolio-info">
+            <h3>Проект 1</h3>
+            <p>Краткое описание проекта с современным дизайном.</p>
+          </div>
         </div>
-        <div class="item" data-aos="zoom-in" data-aos-delay="150">
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="150">
           <img src="https://via.placeholder.com/400x300" alt="Проект 2">
-          <h3>Проект 2</h3>
-          <p>Краткое описание проекта.</p>
+          <div class="portfolio-info">
+            <h3>Проект 2</h3>
+            <p>Инновационные решения для вашего бизнеса.</p>
+          </div>
         </div>
-        <div class="item" data-aos="zoom-in" data-aos-delay="300">
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
           <img src="https://via.placeholder.com/400x300" alt="Проект 3">
-          <h3>Проект 3</h3>
-          <p>Краткое описание проекта.</p>
+          <div class="portfolio-info">
+            <h3>Проект 3</h3>
+            <p>Элегантное и функциональное решение для клиентов.</p>
+          </div>
         </div>
-        <div class="item" data-aos="zoom-in" data-aos-delay="450">
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="450">
           <img src="https://via.placeholder.com/400x300" alt="Проект 4">
-          <h3>Проект 4</h3>
-          <p>Краткое описание проекта.</p>
+          <div class="portfolio-info">
+            <h3>Проект 4</h3>
+            <p>Уникальный дизайн, подчеркивающий индивидуальность бренда.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -69,7 +91,7 @@
 
   <!-- Секция "Контакты" -->
   <section id="contact">
-    <div class="container" data-aos="fade-up">
+    <div class="container contact-container" data-aos="fade-up">
       <h2>Контакты</h2>
       <p>Свяжитесь со мной для обсуждения проектов:</p>
       <ul class="contact-info">
@@ -82,7 +104,9 @@
 
   <!-- Футер -->
   <footer>
-    <p>&copy; 2025 Ваше имя. Все права защищены.</p>
+    <div class="container">
+      <p>&copy; 2025 [Ваше имя]. Все права защищены.</p>
+    </div>
   </footer>
 
   <!-- Подключение AOS JS -->
