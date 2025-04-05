@@ -249,4 +249,7 @@ header {
 footer {
   background: #222;
   color: #fff;
-  padding:
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
